@@ -78,11 +78,13 @@ La arquitectura basada en mensajes o Message Driven, **se basa en emisores y rec
 
 Por ejemplo el emisor A envia un mensaje y el *queue agregator* o gestor de cola sabra en que cola se debe guardar ese mensaje que acaba de llegar y notifica a todos los receptores que se encuentran suscritos a esta cola en particular, que llego un nuevo mensaje.
 
-## Estado de Variables
+## Concepto de Estado en la Reactividad
 
-Estado o *state* de las variables es el lugar donde se almacena la información reactiva de los componentes. Los estados seran 
+Estado o *state* de las variables es el lugar donde se almacena la información reactiva de los componentes. **Los estados seran una especie de variables a las cuales nos suscribimos para recibir sus actualizaciones cada vez que cambien sus valores.**
 
-:::(Info) (PostData:)
+A partir del estado podemos realizar cambios de la interfaz de acuerdo a las acciones del usuario. Este estado sera el ente que nos avisara cuando realizar el cambio pertinente.
+
+:::(Info) (Postdata:)
 No todas los frameworks usan el termino de estado, pero utilizan otros terminos que tienen la escencia de lo que es un estado.
 :::
 
@@ -108,7 +110,6 @@ Otra corriente, menciona que no hay la necesidad de generar una copia completa d
 
 Se parte por la creación de un **componente**, este tendrá ciertos atributos y **estados** que lo caracterizan, y esta expuesto al **usuario**. El usuario sera el encargado de interactuar con el componente y efectuar el cambio de estado del componente, entonces se seguirá una estrategia de **renderizado** del navegador para presentarle al usuario se presentara al usuario.
 
-![](C:\Users\raycr\AppData\Roaming\marktext\images\2022-08-23-12-19-02-image.png)
-
+![](img\2022-08-23-12-19-02-image.png)
 
 **Contribución realizada por:** David Castillo
